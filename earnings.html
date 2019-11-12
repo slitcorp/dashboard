@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" >
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+</head>
+
+<body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">                    
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 3</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="buttomPanel">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fas fa-align-left"></i>
+                                <!--<span>Toggle Sidebar</span>-->
+                        </button>
+                </div>
+            </nav>
+        <div class="wrapper">
+                <!-- Sidebar  -->
+                
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Dashboard</h3>
+                    </div>        
+                    <ul class="list-unstyled components">
+                        <li>
+                            <a href="#homeSubmenu"><span><i class="fas fa-home"></i></span>Home</a>
+                            
+                        </li>
+                        <li class="active">
+                            <a href="#"><span><i class="fas fa-file-invoice-dollar"></i></span>Earnings</a>
+                        </li>
+                        <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="#">Page 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="list-unstyled CTAs">
+                        <li>
+                            <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                        </li>
+                        <li>
+                            <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Page Content  -->
+                <div id="content">
+                    <div class="row">
+                            <div class="messages" id="messages">
+                                    <div class="card news">
+                                            <div class="card-body earnings">
+                                                    <div class="row">
+                                                    <div id = "referral_details">
+                                                        <h5>Orders</h5>
+                                                        <div class="separator"></div>
+                                                        <div id="tol">
+                                                        <div id="referral">
+                                                            <div class="overview_referral">
+                                                            <div class="overview_Referral_count">
+                                                                <div class="Referral_count">0</div> 
+                                                                <div class="count_title">Total Orders</div>
+                                                            </div>
+                                                            <svg data-v-3c5762f5="" class="donut">
+                                                                <circle data-v-3c5762f5="" r="38%" cx="50%" cy="50%" style="stroke-dasharray: 422, 422; stroke-dashoffset: 0;"></circle>
+                                                                <circle data-v-3c5762f5="" r="38%" cx="50%" cy="50%" style="stroke-dasharray: 0, 422; stroke-dashoffset: -422;"></circle>
+                        
+                                                            </svg>
+                                                            
+                                                        </div>
+                                                        </div><!--#referral-->
+                                                        <div id="analytics">
+                                                                <div id="#bronze">
+                                                                    <div class="percentage">0%</div> 
+                                                                    <div class="analytics-text">
+                                                                        <p><strong>0</strong> orders completed</p> 
+                                                                        
+                                                                    </div>
+                                                                </div> 
+                                                                <div id="#silver">
+                                                                    <div class="percentage">0%</div> 
+                                                                    <div class="analytics-text">
+                                                                        <p><strong>0</strong> orders failed</p> 
+                                                                        
+                                                                    </div>
+                                                                </div> 
+                                                        </div> <!--analytics-->
+                                                    </div>
+                                                    </div>
+                                    </div>
+                                            </div>
+                                        </div> <!--news-->
+                            </div> <!--#referral-->
+        
+                                <div class="messages" id="bal">
+                                        <div class="card news">
+                                                <div class="card-body earnings">
+                                                    <div class="">
+                                                <div id="avail">
+                                                <h5>Total Balance</h5>
+                                                <div class="separator"></div>
+                                                <h6>GH₵ 0.0</h6>
+                                                <p class="text-muted">Money here is the acummulated balance earned through orders paid on your website.</p>
+                                                </div> <!--#avail-->
+                                            </div>
+                                                </div>
+                                                
+                                            </div>
+                                        
+                                        
+                                </div> <!--End #orders-->
+                            
+                                </div> <!--#content .row-->                 
+                    </div> <!--#content-->
+                </div> <!--.wrapper-->
+        
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <!-- jQuery Custom Scroller CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

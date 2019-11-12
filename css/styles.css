@@ -58,7 +58,7 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #f8f9fa;
+    background: #f7f7f7;
     color: #000;
     transition: all 0.3s;
 }
@@ -214,12 +214,13 @@ a.article:hover {
 }
 
 
-#content .messages {
+#content .messages, #content #bal {
     transition: .4s;
     flex: 15%;
     margin: 20px;
     
 }
+
 .messages h2{
     text-align: center;
 }
@@ -272,6 +273,115 @@ a.article:hover {
 
 .buttomPanel #sidebarCollapse.active {
     margin-left: 0px;
+}
+
+/* ---------------------------------------------------
+    Earnings
+----------------------------------------------------- */
+
+.earnings {
+    padding: 20px;
+    /*border-radius: 3px;
+    background-color:
+    #f7f7f7;
+    box-shadow: 0 1.2px 5.6px 0
+    rgba(0,0,0,0.12);
+    border-width: 1px;
+    border-style: solid;
+    border-color:
+    #ffffff;*?
+    width: 100%;
+    margin-bottom: 26px;*/
+}
+#tol {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#referral_details {
+    padding: 30px;
+}
+#referral {
+    position: relative;
+}
+.separator {
+    height: 1.2px;
+    width: 200px;
+    margin: 20px 0px;
+    background: #eeeeee;
+    position: relative;
+}
+.separator:after {
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 2px;
+    width: 100px;
+    background-color: #2e91fc;
+    content:"";
+}
+
+.news {
+    background-color: #f7f7f7 !important;
+    margin: 30px !important;
+}
+
+.overview_referral {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.overview_Referral_count {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Referral_count {
+    color: #2e91fc;
+    font-weight: 600;
+    font-size: 22px;
+}
+.count_title {
+    font-size: 12px;
+}
+.donut {
+    width: 200px;
+}
+.donut circle:nth-child(1) {
+    stroke: #2e91fc;
+}
+.donut circle {
+    fill: none;
+    stroke-width: 12;
+    transition: stroke-dasharray 0.3s ease-in-out,stroke-dashoffset 0.3s ease-in-out;
+}
+.donut circle:nth-child(2) {
+    stroke: #417505;
+}
+.donut circle {
+    fill: none;
+    stroke-width: 12;
+    transition: stroke-dasharray 0.3s ease-in-out,stroke-dashoffset 0.3s ease-in-out;
+}
+#analytics {
+    margin-left: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#bal {
+
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
